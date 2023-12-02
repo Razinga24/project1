@@ -1,0 +1,151 @@
+
+
+body {
+    background-image: url(assets/tile.jpg);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+
+.notes {
+  margin-left: 30px;
+  display: inline-block;
+  text-align: left;
+  height: 250px;
+  width: 185px;
+  padding: 15px;
+  background-image: url(assets/notebg.png);
+  position: relative;
+}
+
+.notes i {
+  position: absolute;
+  right: 8px;
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.notes:hover i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.notes:last-child{
+  opacity: 0; 
+  animation: fadeIn 1s forwards; 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.notes .note-text {
+    font-size: 12px; 
+}
+
+.notes p { 
+    margin:10px 5px 10px 0;
+    height: 160px;
+    width: 150px;
+    padding: 5px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex: 1;
+}
+
+.notes p::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.notes p ::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 100px;
+}
+  
+.notes p::-webkit-scrollbar-thumb {
+    background-color: #008bbae7;
+    border-radius: 100px;
+}
+
+.noteBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    width: 550px;
+    background-image: url(assets/formbg.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+
+.noteBox button{
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.note-text{
+    display: block;
+    margin: auto;
+}
+
+.note-time{
+    display: inline-block;
+    margin-bottom: 20%;
+}
+
+button{ 
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #008CBA; 
+    color: black; 
+    border: 2px solid black;
+    width: 100%;
+}
+
+button:hover {
+  background-color: white;
+  color: #008CBA;
+}
+
+.text-input {
+    margin-top: 20px;
+}
+
+.date-input {
+    margin-top: 20px;
+}
+.time-input {
+    margin-top: 20px;
+}
+
+input{
+    width: 300px;
+}
+
+i{
+    position: absolute;
+    right: 15px; 
+    top: 30px; 
+    cursor: pointer;
+}
+
+
+
+
